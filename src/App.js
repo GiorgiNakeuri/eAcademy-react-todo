@@ -2,6 +2,7 @@ import { useState } from "react";
 import AddTodo from "./components/AddTodo";
 import { TodoList } from "./components/TodoList";
 import { QuickActions } from "./components/QuickActions";
+import "./App.css";
 
 function App() {
   const [input, setInput] = useState("");
@@ -21,7 +22,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="wrapper">
       <AddTodo
         handleSave={handleSave}
         handleInputChange={handleInputChange}

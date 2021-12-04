@@ -1,3 +1,5 @@
+import "../styles/QuickActions.css";
+
 export function QuickActions({ list, setList }) {
   const handleRemoveAll = () => {
     setList([]);
@@ -10,12 +12,10 @@ export function QuickActions({ list, setList }) {
   };
 
   return (
-    <div>
-      <button onClick={handleRemoveAll}>ყველას წაშლა</button>
-      <button onClick={handleRemoveAllComplited}>
-        ყველა დასრულებულის წაშლა
-      </button>
-      <button onClick={handleRemoveAllChecked}>ყველა მონიშნულის წაშლა</button>
+    <div className="QuickActionsContainer">
+      <button onClick={handleRemoveAll}>წაშლა</button>
+      <button onClick={handleRemoveAllComplited}>დასრულებულის წაშლა</button>
+      <button onClick={handleRemoveAllChecked}>მონიშნულის წაშლა</button>
     </div>
   );
 }

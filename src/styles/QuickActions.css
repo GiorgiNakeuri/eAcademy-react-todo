@@ -1,0 +1,27 @@
+.QuickActionsContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.QuickActionsContainer button + button {
+  margin-left: 10px;
+}
+.QuickActionsContainer button {
+  height: 35px;
+  border: none;
+  border-radius: 30px;
+  padding: 0 20px;
+  color: white;
+  font-family: inherit;
+}
+
+.QuickActionsContainer button:nth-child(1) {
+  background: #db3a3a;
+}
+.QuickActionsContainer button:nth-child(2) {
+  background: #0aaa42;
+}
+.QuickActionsContainer button:nth-child(3) {
+  background: #9f2ec4;
+}

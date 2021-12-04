@@ -1,0 +1,35 @@
+.EditTodoItemContainer button {
+  background: none;
+  border: none;
+}
+
+.ModalContentWraper {
+  display: flex;
+  width: 350px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.CloseButton {
+  background: none;
+  border: none;
+  position: absolute;
+}
+
+.ModalContentWraper input {
+  height: 35px;
+  align-content: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.ModalContentWraper button {
+  height: 37px;
+  border: none;
+  background: #f29727;
+  border-radius: 10px;
+  color: white;
+  width: 80px;
+  margin-left: 10px;
+}

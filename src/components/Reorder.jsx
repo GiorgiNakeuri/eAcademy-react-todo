@@ -1,3 +1,9 @@
+import {
+  BsFillArrowUpSquareFill,
+  BsFillArrowDownSquareFill,
+} from "react-icons/bs";
+import "../styles/Reorder.css";
+
 export function Reorder({ list, setList, id }) {
   const itemIndex = list.findIndex((entry) => entry.id === id);
   const listCopy = [...list];
@@ -12,7 +18,8 @@ export function Reorder({ list, setList, id }) {
     setList(listCopy);
   };
   const handleDownvote = () => {
-    if (itemIndex === list.lenght - 1) return;
+    console.log(list);
+    if (itemIndex === list.length - 1) return;
 
     const itemBelow = listCopy[itemIndex + 1];
     listCopy[itemIndex + 1] = listCopy[itemIndex];
@@ -22,9 +29,13 @@ export function Reorder({ list, setList, id }) {
   };
 
   return (
-    <div>
-      <button onClick={handleUpvote}>⇧</button>
-      <button onClick={handleDownvote}>⇩</button>
+    <div className="ReorderButtonsContainer">
+      <button onClick={handleUpvote}>
+        <BsFillArrowUpSquareFill size="25px" color="#26a1e9" />
+      </button>
+      <button onClick={handleDownvote}>
+        <BsFillArrowDownSquareFill size="25px" color="#e029b9" />
+      </button>
     </div>
   );
 }

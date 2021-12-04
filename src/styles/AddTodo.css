@@ -1,0 +1,26 @@
+.addTodoContainer {
+  display: flex;
+}
+
+.addTodoContainer input {
+  height: 40px;
+  flex: 4 1;
+  border-radius: 5px;
+  border: 1px solid rgb(207 207 207);
+  outline: none;
+  padding: 0 10px;
+  background: rgb(242 242 242);
+  color: #434242;
+  font-size: 18px;
+  font-family: fangsong;
+  margin: 0 10px 0 0;
+}
+
+.addTodoContainer button {
+  flex: 1 1;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  background: #41a0ce;
+  color: white;
+}
